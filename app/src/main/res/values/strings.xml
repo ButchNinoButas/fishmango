@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FISHMANGO</string>
+    <string name="fishman_go">FISHMAN GO</string>
+    <string name="dashboard">DASHBOARD\n</string>
+    <string name="weather_forecast">Weather Forecast</string>
+    <string name="tide_information">Tide Information</string>
+</resources>

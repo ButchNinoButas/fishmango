@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img_14"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img_7"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fullname"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize"
+        android:autofillHints="">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize"
+        android:autofillHints="">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize"
+        android:autofillHints="">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextComfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comfirm Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#558B2F"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPhonetic"
+        android:minHeight="48dp"
+        android:hint="Phone number"
+        tools:ignore="TextFields,VisualLintTextFieldSize"
+        android:autofillHints="">
+
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="UseCompoundDrawables">
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:text="Register"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="VisualLintButtonSize">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/imageViewFb"
+            android:layout_width="74dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="1dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="facebook_icon"
+            android:onClick="openFacebookRegistrationPage"
+            android:background="@drawable/img_2"
+            tools:ignore="UsingOnClickInXml">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/textViewFb"
+            android:layout_width="93dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20sp"
+            android:text="facebook"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/imageViewGoogle"
+            android:layout_width="74dp"
+            android:layout_height="61dp"
+            android:clickable="true"
+            android:contentDescription="google_icon"
+            android:focusable="true"
+            android:onClick="openGoogleRegistrationPage"
+            android:background="@drawable/img_3"
+            tools:ignore="UsingOnClickInXml">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/textViewGoogle"
+            android:layout_width="93dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20sp"
+            android:text="Google"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

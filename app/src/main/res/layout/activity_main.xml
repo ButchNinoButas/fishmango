@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_14"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/fishImage"
+        android:layout_width="184dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/img_7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/nav"
+        android:layout_width="318dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:text="navigate sustainable seas and secure future"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fishImage" />
+
+    <TextView
+        android:id="@+id/fishman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="22dp"
+        android:text="  FISHMAN"
+        android:textColor="#FF7F50"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav" />
+
+    <TextView
+        android:id="@+id/go"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="GO"
+        android:textColor="#1A0DA1 "
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fishman"
+        app:layout_constraintTop_toBottomOf="@+id/nav" />
+
+
+    <TextView
+        android:id="@+id/SignUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgbutton2"
+        android:text="  Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fishman"
+        tools:ignore="NestedWeights" />
+
+    <TextView
+        android:id="@+id/SignUpTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="it's easier to sign up now"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpTextView" />
+
+    <ImageButton
+        android:id="@+id/facebookImage"
+        android:layout_width="98dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/img_2"
+        android:contentDescription="FacebookImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpTextView1"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/fbdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="30dp"
+        android:text="Continue with facebook"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/facebookImage"
+        app:layout_constraintTop_toBottomOf="@id/SignUpTextView1"
+        tools:ignore="NestedWeights" />
+
+    <Button
+        android:id="@+id/ButtonEmailPhone"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:autofillHints="phone,emailAddress"
+        android:backgroundTint="@color/white"
+        android:text="I'll use phone"
+        android:textColor="#1B2631"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fbdesc"
+        tools:ignore="NestedWeights">
+
+    </Button>
+
+    <ImageButton
+        android:id="@+id/twitterImage"
+        android:layout_width="71dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_5"
+        android:clickable="true"
+        android:contentDescription="google_icon"
+        android:focusable="true"
+        android:onClick="openGoogleRegistrationPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ButtonEmailPhone"
+        tools:ignore="UsingOnClickInXml">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/InstagramImage"
+        android:layout_width="68dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_4"
+        android:clickable="true"
+        android:contentDescription="Google_icon"
+        android:focusable="true"
+        android:onClick="openGoogleRegistrationPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ButtonEmailPhone"
+        tools:ignore="UsingOnClickInXml">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageViewGoogle"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_3"
+        android:clickable="true"
+        android:contentDescription="GOOGLE_icon"
+        android:focusable="true"
+        android:onClick="openGoogleRegistrationPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ButtonEmailPhone"
+        tools:ignore="UsingOnClickInXml">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/HvAccts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:text="have an account?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InstagramImage" />
+
+    <TextView
+        android:id="@+id/HvAcct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="10dp"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:textColor="#6995C8"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InstagramImage" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

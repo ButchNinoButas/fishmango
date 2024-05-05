@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButasMyProfileFeature">
+
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#91eded"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+
+
+        android:src="@drawable/profile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Butch :P"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Followers 3 | Following 5"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fisherman"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <ImageView
+        android:id="@+id/Messages"
+        android:layout_width="420dp"
+        android:layout_height="75dp"
+
+        android:src="@drawable/newmess"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <ImageView
+        android:id="@+id/Mylikes"
+        android:layout_width="415dp"
+        android:layout_height="70dp"
+
+        android:src="@drawable/newlikes"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <ImageView
+        android:id="@+id/Myprod"
+        android:layout_width="420dp"
+        android:layout_height="69dp"
+
+        android:src="@drawable/myprod"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <ImageView
+        android:id="@+id/Mycatch"
+        android:layout_width="427dp"
+        android:layout_height="61dp"
+
+        android:src="@drawable/mycatch"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-13dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <ImageView
+        android:id="@+id/Myearning"
+        android:layout_width="416dp"
+        android:layout_height="73dp"
+
+        android:src="@drawable/newearning"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <ImageView
+        android:id="@+id/Mysettings"
+        android:layout_width="416dp"
+        android:layout_height="73dp"
+
+        android:src="@drawable/mysettings"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="377dp" />
+
+    <ImageView
+        android:id="@+id/Myhelp"
+        android:layout_width="416dp"
+        android:layout_height="73dp"
+
+        android:src="@drawable/newhelp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="433dp" />
+
+    <ImageView
+        android:id="@+id/Myabout"
+        android:layout_width="416dp"
+        android:layout_height="73dp"
+
+        android:src="@drawable/newabout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <ImageView
+        android:id="@+id/Myswitchaccount"
+        android:layout_width="416dp"
+        android:layout_height="73dp"
+
+        android:src="@drawable/myswitchaccount"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="568dp" />
+
+    <ImageView
+        android:id="@+id/Mylogout"
+        android:layout_width="216dp"
+        android:layout_height="73dp"
+
+        android:src="@drawable/mylogout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="634dp" />
+
+    <ImageView
+        android:id="@+id/Backna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/backna"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="13dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

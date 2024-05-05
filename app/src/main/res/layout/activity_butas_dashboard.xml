@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="#FFFFFF"
+    tools:context=".ButasDashboard">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="0dp"
+
+        android:src="@drawable/img_7" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageView1"
+        android:layout_marginStart="8dp"
+        android:text="@string/fishman_go"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        tools:ignore="RelativeOverlap" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="280dp"
+
+
+        android:layout_marginTop="10dp"
+
+        android:src="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="230dp"
+
+        android:layout_marginTop="10dp"
+
+        android:src="@drawable/img_21" />
+
+    <TextView
+        android:id="@+id/dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@+id/imageView1"
+        android:text="@string/dashboard"
+        android:textSize="25sp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="@string/weather_forecast" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="500dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/textView1"
+        android:src="@drawable/img_22" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tide_information"
+        android:layout_below="@+id/imageView4"
+        android:padding="8dp"
+        android:background="@drawable/border" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_23"
+        android:layout_below="@+id/textView2"
+       />
+
+    <ImageView
+        android:id="@+id/chart"
+        android:layout_width="wrap_content"
+        android:layout_height="179dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/chart" />
+
+    <ImageButton
+        android:id="@+id/Home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/chart"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="-42dp"
+        android:background="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/Sites"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/chart"
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="-42dp"
+        android:background="@drawable/fishbutton" />
+
+    <ImageButton
+        android:id="@+id/User"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/chart"
+        android:layout_marginStart="170dp"
+        android:layout_marginBottom="-42dp"
+        android:background="@drawable/user"/>
+    <ImageButton
+        android:id="@+id/Store"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/chart"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="-42dp"
+        android:background="@drawable/cart"/>
+    <ImageButton
+        android:id="@+id/Settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/chart"
+        android:layout_marginStart="290dp"
+        android:layout_marginBottom="-42dp"
+        android:background="@drawable/settings"/>
+
+
+
+</RelativeLayout>
