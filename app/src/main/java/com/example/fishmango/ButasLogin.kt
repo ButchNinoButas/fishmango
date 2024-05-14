@@ -22,8 +22,8 @@ class ButasLogin : AppCompatActivity() {
         sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
 
         // Find views
-        val usernameEditText = findViewById<EditText>(R.id.usernameEditText1)
-        val passwordEditText = findViewById<EditText>(R.id.passwordEditText2)
+        val usernameEditText = findViewById<EditText>(R.id.editTextUserName)
+        val passwordEditText = findViewById<EditText>(R.id.editTextPassword)
         val loginButton = findViewById<Button>(R.id.loginButton)
 
         // Set OnClickListener to the login button

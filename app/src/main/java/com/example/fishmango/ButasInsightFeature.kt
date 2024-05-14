@@ -8,36 +8,45 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.fishmango.databinding.ActivityButasDashboardBinding
+import com.example.fishmango.databinding.ActivityButasInsightFeatureBinding
 
 class ButasInsightFeature : AppCompatActivity() {
-    private lateinit var binding: ButasInsightFeature
+    private lateinit var binding: ActivityButasInsightFeatureBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_butas_insight_feature)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-        // Find SignUpTextView by id
-        val homeImageButton = findViewById<ImageButton>(R.id.Home)
+        binding = ActivityButasInsightFeatureBinding.inflate(layoutInflater)
+        setContentView (binding.root)
 
-        // Set OnClickListener to SignUpTextView
-        homeImageButton.setOnClickListener {
-            // Create Intent to start RegisterActivity
-            val intent = Intent(this@ButasInsightFeature, ButasDashboard::class.java)
-            startActivity(intent)
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId){
+                R.id.Home -> {
+                    val intent = Intent(this, ButasInsightFeature::class.java)
+                    startActivity(intent)
+                    true
+                }
 
+                R.id.Sites -> {
+                    // Handle navigation to My Recipes
+                    val intent = Intent(this, ButasInsightFeature::class.java)
+                    startActivity(intent)
+                    true
+                }
 
-        }
-        val userImageButton= findViewById<ImageButton>(R.id.User)
+                R.id.User -> {
+                    val intent = Intent(this, ButasInsightFeature::class.java)
+                    startActivity(intent)
+                    true
+                }
 
-        // Set OnClickListener to the HvAcct TextView
-        userImageButton.setOnClickListener {
-            // Create an Intent to start the LoginActivity
-            val intent = Intent(this@ButasInsightFeature, ButasMyProfileFeature::class.java)
-            startActivity(intent)
+                R.id.Store -> {
+                    val intent = Intent(this, ButasInsightFeature::class.java)
+                    startActivity(intent)
+                    true
+                }
+
+                else -> false
+            }
         }
     }
 }

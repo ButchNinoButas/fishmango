@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -193,53 +193,53 @@
         tools:layout_editor_absoluteX="211dp"
         tools:layout_editor_absoluteY="461dp" />
 
-    <ImageButton
-        android:id="@+id/Home"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/home"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="635dp" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/Home"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:background="@drawable/home"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="45dp"-->
+<!--        tools:layout_editor_absoluteY="635dp" />-->
 
-    <ImageButton
-        android:id="@+id/Shop"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+<!--    <ImageButton-->
+<!--        android:id="@+id/Shop"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
 
-        android:background="@drawable/fishbutton"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="635dp" />
+<!--        android:background="@drawable/fishbutton"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="115dp"-->
+<!--        tools:layout_editor_absoluteY="635dp" />-->
 
-    <ImageButton
-        android:id="@+id/User"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@drawable/user"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="635dp" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/User"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:background="@drawable/user"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="185dp"-->
+<!--        tools:layout_editor_absoluteY="635dp" />-->
 
-    <ImageButton
-        android:id="@+id/Store"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+<!--    <ImageButton-->
+<!--        android:id="@+id/Store"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
 
-        android:background="@drawable/cart"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="635dp" />
+<!--        android:background="@drawable/cart"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="253dp"-->
+<!--        tools:layout_editor_absoluteY="635dp" />-->
 
-    <ImageButton
-        android:id="@+id/Settings"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+<!--    <ImageButton-->
+<!--        android:id="@+id/Settings"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
 
-        android:background="@drawable/settings"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="322dp"
-        tools:layout_editor_absoluteY="635dp" />
+<!--        android:background="@drawable/settings"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="322dp"-->
+<!--        tools:layout_editor_absoluteY="635dp" />-->
 
     <TextView
         android:id="@+id/TilapiaTextView"
@@ -284,5 +284,14 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="267dp"
         tools:layout_editor_absoluteY="582dp" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

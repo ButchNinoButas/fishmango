@@ -57,24 +57,22 @@
     <!--        android:autofillHints=""-->
     <!--        tools:ignore="VisualLintTextFieldSize" />-->
 
+
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="300dp"
         android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="390dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_background1"
         android:hint="Password"
         android:inputType="textPassword"
-        android:layout_marginStart="35dp"
         android:padding="10dp"
-        android:layout_marginTop="390dp"
-        android:background="@drawable/edittext_background1"
-        tools:ignore="VisualLintTextFieldSize"
-        android:autofillHints="">
+        tools:ignore="VisualLintTextFieldSize">
 
 
     </EditText>
-
-
-
 
     <Switch
         android:id="@+id/switch1"
