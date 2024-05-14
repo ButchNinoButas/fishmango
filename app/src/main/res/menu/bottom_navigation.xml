@@ -1,22 +1,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_my_recipes"
-        android:icon="@drawable/ic_online_recipes"
-        android:title="My Recipes" />
+        android:id="@+id/Home"
+        android:icon="@drawable/home"
+        android:title="Home" />
 
     <item
-        android:id="@+id/navigation_online_recipes"
-        android:icon="@drawable/ic_recipe"
-        android:title="Online Recipes" />
+        android:id="@+id/Sites"
+        android:icon="@drawable/fishbutton"
+        android:title="Insights" />
 
 
     <item
-        android:id="@+id/navigation_shopping_list"
-        android:icon="@drawable/ic_shopping_lisr"
-        android:title="Shopping List" />
+        android:id="@+id/User"
+        android:icon="@drawable/user"
+        android:title="My Profile" />
 
     <item
-        android:id="@+id/settings"
-        android:icon="@drawable/ic_settings"
-        android:title="Setting" />
+        android:id="@+id/Store"
+        android:icon="@drawable/cart"
+        android:title="Store" />
+
+    <item
+        android:id="@+id/Settings"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
 </menu>

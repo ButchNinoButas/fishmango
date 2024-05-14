@@ -2,6 +2,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/Dashboard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -93,56 +94,65 @@
         android:layout_below="@+id/textView2"
        />
 
-    <ImageView
-        android:id="@+id/chart"
-        android:layout_width="wrap_content"
-        android:layout_height="179dp"
-        android:layout_below="@+id/imageView5"
-        android:layout_marginTop="0dp"
-        android:src="@drawable/chart" />
+<!--    <ImageView-->
+<!--        android:id="@+id/chart"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="179dp"-->
+<!--        android:layout_below="@+id/imageView5"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:src="@drawable/chart" />-->
 
-    <ImageButton
-        android:id="@+id/Home"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/chart"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="-42dp"
-        android:background="@drawable/home" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/Home"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignBottom="@+id/chart"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginBottom="-42dp"-->
+<!--        android:background="@drawable/home" />-->
 
-    <ImageButton
-        android:id="@+id/Sites"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/chart"
-        android:layout_marginStart="110dp"
-        android:layout_marginBottom="-42dp"
-        android:background="@drawable/fishbutton" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/Sites"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignBottom="@+id/chart"-->
+<!--        android:layout_marginStart="110dp"-->
+<!--        android:layout_marginBottom="-42dp"-->
+<!--        android:background="@drawable/fishbutton" />-->
 
-    <ImageButton
-        android:id="@+id/User"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/chart"
-        android:layout_marginStart="170dp"
-        android:layout_marginBottom="-42dp"
-        android:background="@drawable/user"/>
-    <ImageButton
-        android:id="@+id/Store"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/chart"
-        android:layout_marginStart="230dp"
-        android:layout_marginBottom="-42dp"
-        android:background="@drawable/cart"/>
-    <ImageButton
-        android:id="@+id/Settings"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/chart"
-        android:layout_marginStart="290dp"
-        android:layout_marginBottom="-42dp"
-        android:background="@drawable/settings"/>
+<!--    <ImageButton-->
+<!--        android:id="@+id/User"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignBottom="@+id/chart"-->
+<!--        android:layout_marginStart="170dp"-->
+<!--        android:layout_marginBottom="-42dp"-->
+<!--        android:background="@drawable/user" />-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/Store"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignBottom="@+id/chart"-->
+<!--        android:layout_marginStart="230dp"-->
+<!--        android:layout_marginBottom="-42dp"-->
+<!--        android:background="@drawable/cart"/>-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/Settings"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignBottom="@+id/chart"-->
+<!--        android:layout_marginStart="290dp"-->
+<!--        android:layout_marginBottom="-42dp"-->
+<!--        android:background="@drawable/settings"/>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation" />
 
 
 
