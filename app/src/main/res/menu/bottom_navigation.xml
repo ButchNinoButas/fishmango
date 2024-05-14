@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_my_recipes"
+        android:icon="@drawable/ic_online_recipes"
+        android:title="My Recipes" />
 
+    <item
+        android:id="@+id/navigation_online_recipes"
+        android:icon="@drawable/ic_recipe"
+        android:title="Online Recipes" />
+
+
+    <item
+        android:id="@+id/navigation_shopping_list"
+        android:icon="@drawable/ic_shopping_lisr"
+        android:title="Shopping List" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
 </menu>
