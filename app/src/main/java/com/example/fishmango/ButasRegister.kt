@@ -71,7 +71,7 @@ class ButasRegister : AppCompatActivity() {
 
         signInTextView.setOnClickListener {
 
-            val intent = Intent(this@ButasRegister, ButasSignIn::class.java)
+            val intent = Intent(this@ButasRegister, ButasLogin::class.java)
             startActivity(intent)
         }
     }
