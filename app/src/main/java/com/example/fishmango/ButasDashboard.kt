@@ -17,7 +17,7 @@ class ButasDashboard : AppCompatActivity() {
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId){
                 R.id.Home -> {
-                    val intent = Intent(this, ButasInsightFeature::class.java)
+                    val intent = Intent(this, ButasDashboard::class.java)
                     startActivity(intent)
                     true
                 }
@@ -36,7 +36,7 @@ class ButasDashboard : AppCompatActivity() {
                 }
 
                 R.id.Store -> {
-                    val intent = Intent(this, ButasInsightFeature::class.java)
+                    val intent = Intent(this, ButasMarket::class.java)
                     startActivity(intent)
                     true
                 }
