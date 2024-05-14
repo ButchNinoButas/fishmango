@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -63,6 +64,14 @@ class ButasRegister : AppCompatActivity() {
             // Display a toast message
             Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, ButasLogin::class.java)
+            startActivity(intent)
+        }
+        val signInTextView = findViewById<TextView>(R.id.SignIntText)
+
+
+        signInTextView.setOnClickListener {
+
+            val intent = Intent(this@ButasRegister, ButasSignIn::class.java)
             startActivity(intent)
         }
     }
