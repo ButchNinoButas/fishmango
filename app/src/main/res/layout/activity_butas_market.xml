@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-
+    android:background="#659da3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ButasMarket">
@@ -118,10 +118,10 @@
         android:layout_width="161dp"
         android:layout_height="153dp"
 
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="300dp"
         android:src="@drawable/bangus"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="190dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -181,19 +181,10 @@
 
         android:src="@drawable/tila"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="461dp" />
+        android:layout_marginStart="200dp"
+         />
 
-    <ImageView
-        android:layout_width="161dp"
-        android:layout_height="153dp"
-
-        android:src="@drawable/tulis"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="461dp" />
-
-<!--    <ImageButton-->
+    <!--    <ImageButton-->
 <!--        android:id="@+id/Home"-->
 <!--        android:layout_width="40dp"-->
 <!--        android:layout_height="40dp"-->
@@ -241,6 +232,14 @@
 <!--        tools:layout_editor_absoluteX="322dp"-->
 <!--        tools:layout_editor_absoluteY="635dp" />-->
 
+    <ImageView
+        android:layout_width="161dp"
+        android:layout_height="153dp"
+
+        android:src="@drawable/tulis"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="60dp" />
+
     <TextView
         android:id="@+id/TilapiaTextView"
         android:layout_width="wrap_content"
@@ -263,27 +262,27 @@
         tools:layout_editor_absoluteX="267dp"
         tools:layout_editor_absoluteY="312dp" />
 
-    <TextView
-        android:id="@+id/SardinesTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sardines"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="312dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/SardinesTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Sardines"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textStyle="bold"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="71dp"-->
+<!--        tools:layout_editor_absoluteY="312dp" />-->
 
-    <TextView
-        android:id="@+id/TulinganTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tulingan"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="582dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/TulinganTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tulingan"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textStyle="bold"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="267dp"-->
+<!--        tools:layout_editor_absoluteY="582dp" />-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -293,5 +292,7 @@
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_navigation"
         tools:ignore="MissingConstraints" />
+
+
 
 </RelativeLayout>

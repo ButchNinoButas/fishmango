@@ -3,22 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-
+    android:background="#659da3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/background"
+    <View
+        android:id="@+id/backgroundView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/mainbg"
-        android:scaleType="centerCrop"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginTop="551dp"/>
 
     <Button
         android:id="@+id/SignUpTextView"
@@ -30,8 +25,7 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="575dp"
-         />
+        android:layout_marginTop="575dp" />
 
     <Button
         android:id="@+id/HvAcct"
@@ -43,8 +37,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:backgroundTint="#FFCC3E"
-        android:layout_marginTop="655dp"
-     />
+        android:layout_marginTop="655dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,30 +55,45 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="350dp"
         android:text=" Getting fish has never been this easy."
-        android:textColor="#6995C8"
+        android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold" />
+
     <TextView
         android:layout_width="301dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginTop="370dp"
         android:text=" Get your Account now and let’s get "
-        android:textColor="#6995C8"
+        android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold" />
+
     <TextView
         android:layout_width="301dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
         android:layout_marginTop="390dp"
         android:text=" started already. "
-        android:textColor="#6995C8"
+        android:textColor="#000000"
         android:textSize="17sp"
         android:textStyle="bold" />
 
 
+    <TextView
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="625dp"
+        android:text=" OR "
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
 </RelativeLayout>
-
-
