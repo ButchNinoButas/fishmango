@@ -8,9 +8,14 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fishmango.databinding.ActivityButasInsightFeatureBinding
 import com.example.fishmango.databinding.ActivityButasMarketBinding
+import android.widget.ListView
+import com.example.fishmango.adapters.FishAdapter
+import com.example.fishmango.models.Fish
 
 class ButasMarket : AppCompatActivity() {
     private lateinit var binding: ActivityButasMarketBinding
+    private lateinit var listView: ListView
+    private lateinit var customAdapter: FishAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityButasMarketBinding.inflate(layoutInflater)
@@ -48,6 +53,20 @@ class ButasMarket : AppCompatActivity() {
             }
         }
         binding.bottomNavigation.selectedItemId = R.id.Store
+        val fishs = listOf(
+            Fish("Bangus", "₱ 280", "Available", R.drawable.banguss),
+            Fish("Tilapia", "₱ 300", "Available", R.drawable.tilapias),
+            Fish("Tulingan", "₱ 250", "Available", R.drawable.tulingannew),
+            Fish("Tamarong", "₱ 250", "Available", R.drawable.tamarong1)
+        )
+
+
+        customAdapter = FishAdapter(this, fishs)
+        listView = findViewById(R.id.listViewFish)
+        listView.adapter = customAdapter
     }
+
+
+
 
 }
