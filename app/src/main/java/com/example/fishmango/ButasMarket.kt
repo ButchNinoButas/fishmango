@@ -53,6 +53,9 @@ class ButasMarket : AppCompatActivity() {
             }
         }
         binding.bottomNavigation.selectedItemId = R.id.Store
+
+
+
         val fishs = listOf(
             Fish("Bangus", "₱ 280", "Available", R.drawable.banguss),
             Fish("Tilapia", "₱ 300", "Available", R.drawable.tilapias),
@@ -64,6 +67,21 @@ class ButasMarket : AppCompatActivity() {
         customAdapter = FishAdapter(this, fishs)
         listView = findViewById(R.id.listViewFish)
         listView.adapter = customAdapter
+
+        listView.setOnItemClickListener { parent, view, position, id ->
+            val selectedFish = fishs[position]
+
+            val intent = Intent(this@ButasMarket, ButasPlaceOrder::class.java).apply {
+                putExtra("fishName", selectedFish.name)
+                putExtra("fishPrice", selectedFish.price)
+                putExtra("fishStatus", selectedFish.status)
+                putExtra("profileImage", selectedFish.profileImage)
+
+
+            }
+
+            startActivity(intent)
+        }
     }
 
 

@@ -13,7 +13,7 @@
         android:theme="@style/Theme.FISHMANGO"
         tools:targetApi="31">
         <activity
-            android:name=".Butas_PlaceOrder"
+            android:name=".ButasPlaceOrder"
             android:exported="false" />
         <activity
             android:name=".ButasMyProfileFeature"

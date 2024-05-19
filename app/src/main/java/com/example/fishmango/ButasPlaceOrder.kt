@@ -2,13 +2,14 @@ package com.example.fishmango
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Butas_PlaceOrder : AppCompatActivity() {
+class ButasPlaceOrder : AppCompatActivity() {
 
 
 
@@ -34,5 +35,7 @@ class Butas_PlaceOrder : AppCompatActivity() {
         findViewById<TextView>(R.id.FishName).text = "Name: $fishName"
         findViewById<TextView>(R.id.FishPrice).text = "Price: $fishPrice"
         findViewById<TextView>(R.id.FishStatus).text = "Status $fishStatus"
+
+        findViewById<ImageView>(R.id.FishProfile).setImageResource(fishImage)
     }
 }

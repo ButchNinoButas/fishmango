@@ -34,7 +34,7 @@ class FishAdapter(private val context: Context, private val fishs: List<Fish>) :
         tvPrice.text = context.getString(R.string.price_label, fish.price)
         tvStatus.text = context.getString(R.string.status_label, fish.status)
 
-        // Set student profile image
+
         ivProfile.setImageResource(fish.profileImage)
 
 

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="#ede980">
+    android:background="#ede980"
+    tools:context=".ButasPlaceOrder">
 
     <TextView
         android:id="@+id/tvProfileLabel"
@@ -16,7 +18,7 @@
         android:paddingBottom="16dp"/>
 
     <ImageView
-        android:id="@+id/ivStudentProfile"
+        android:id="@+id/FishProfile"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_below="@id/tvProfileLabel"
@@ -29,7 +31,7 @@
         android:layout_height="wrap_content"
         android:text="Name: "
         android:textSize="18sp"
-        android:layout_below="@id/ivStudentProfile"
+        android:layout_below="@id/FishProfile"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
 

@@ -1,12 +1,8 @@
 <resources>
-    <string name="app_name">CustomListView</string>
-    <string name="list_of_students">List Of Students</string>
-    <string name="program_it">Program: IT</string>
+    <string name="app_name">FISHMANGO</string>
+
     <string name="todo">TODO</string>
-    <string name="name_noah_sebastian">Name: Noah Sebastian</string>
-    <string name="id_number_11234">Id Number: 11234</string>
-    <string name="name_oliver_sykes">Name: Oliver Sykes</string>
-    <string name="id_number_12345">Id Number: 12345</string>
+
     <string name="name_label">Name: %s</string>
     <string name="price_label">Price: %s</string>
     <string name="status_label">Status: %s</string>
