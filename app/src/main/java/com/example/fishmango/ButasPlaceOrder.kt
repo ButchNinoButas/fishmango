@@ -19,11 +19,11 @@ class ButasPlaceOrder : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_butas_place_order)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+//            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+//            insets
+//        }
         // Retrieve data from Intent
         val fishName = intent.getStringExtra("fishName")
         val fishPrice = intent.getStringExtra("fishPrice")
@@ -34,7 +34,7 @@ class ButasPlaceOrder : AppCompatActivity() {
         // Populate TextViews with received data
         findViewById<TextView>(R.id.FishName).text = "Name: $fishName"
         findViewById<TextView>(R.id.FishPrice).text = "Price: $fishPrice"
-        findViewById<TextView>(R.id.FishStatus).text = "Status $fishStatus"
+        findViewById<TextView>(R.id.FishStatus).text = "Status: $fishStatus"
 
         findViewById<ImageView>(R.id.FishProfile).setImageResource(fishImage)
     }
