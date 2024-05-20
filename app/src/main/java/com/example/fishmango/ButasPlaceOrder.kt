@@ -31,6 +31,9 @@ class ButasPlaceOrder : AppCompatActivity() {
 
         val fishImage = intent.getIntExtra("fishImage", R.drawable.banguss)
 
+
+
+
         // Populate TextViews with received data
         findViewById<TextView>(R.id.FishName).text = "Name: $fishName"
         findViewById<TextView>(R.id.FishPrice).text = "Price: $fishPrice"
