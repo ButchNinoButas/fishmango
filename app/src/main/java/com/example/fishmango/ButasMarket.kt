@@ -48,6 +48,12 @@ class ButasMarket : AppCompatActivity() {
 
                     true
                 }
+                R.id.Settings -> {
+                    val intent = Intent(this, ButasSettings::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
 
                 else -> false
             }
@@ -57,10 +63,10 @@ class ButasMarket : AppCompatActivity() {
 
 
         val fishs = listOf(
-            Fish("Bangus", "₱ 280", "Available", R.drawable.banguss),
-            Fish("Tilapia", "₱ 300", "Available", R.drawable.tilapias),
-            Fish("Tulingan", "₱ 250", "Available", R.drawable.tulingannew),
-            Fish("Tamarong", "₱ 250", "Available", R.drawable.tamarong1)
+            Fish("bangus1","Bangus", "₱ 280 per/kg", "Available", R.drawable.banguss),
+            Fish("tilapia1","Tilapia", "₱ 300 per/kg", "Available", R.drawable.tilapias),
+            Fish("tulignan1","Tulingan", "₱ 250 per/kg", "Available", R.drawable.tulingannew),
+            Fish("tamarong1","Tamarong", "₱ 250 per/kg", "Available", R.drawable.tamarong1)
         )
 
 
@@ -68,20 +74,36 @@ class ButasMarket : AppCompatActivity() {
         listView = findViewById(R.id.listViewFish)
         listView.adapter = customAdapter
 
+//        listView.setOnItemClickListener { parent, view, position, id ->
+//            val selectedFish = fishs[position]
+//
+//            val intent = Intent(this@ButasMarket, ButasPlaceOrder::class.java).apply {
+//                putExtra("fishId", selectedFish.id)
+//                putExtra("fishName", selectedFish.name)
+//                putExtra("fishPrice", selectedFish.price)
+//                putExtra("fishStatus", selectedFish.status)
+//                putExtra("profileImage", selectedFish.profileImage)
+//
+//
+//            }
+//
+//            startActivity(intent)
+//        }
+
         listView.setOnItemClickListener { parent, view, position, id ->
             val selectedFish = fishs[position]
 
             val intent = Intent(this@ButasMarket, ButasPlaceOrder::class.java).apply {
+                putExtra("fishId", selectedFish.id) // Pass the ID of the clicked fish
                 putExtra("fishName", selectedFish.name)
                 putExtra("fishPrice", selectedFish.price)
                 putExtra("fishStatus", selectedFish.status)
-                putExtra("profileImage", selectedFish.profileImage)
-
-
+                putExtra("fishImage", selectedFish.profileImage) // Pass the image ID directly
             }
 
             startActivity(intent)
         }
+
     }
 
 

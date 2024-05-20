@@ -45,6 +45,12 @@ class ButasInsightFeature : AppCompatActivity() {
                     finish()
                     true
                 }
+                R.id.Settings -> {
+                    val intent = Intent(this, ButasSettings::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
 
                 else -> false
             }

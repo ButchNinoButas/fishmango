@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-    android:background="#659da3"
+    android:background="#8fd2ff"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ButasSignIn">
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:text="Remember me !"
             android:layout_marginTop="453dp"
-            android:layout_marginStart="55dp"
+            android:layout_marginStart="60dp"
             android:textColor="@color/black"
             android:textSize="15sp"
             android:textStyle="bold">

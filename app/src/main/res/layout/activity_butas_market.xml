@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#ede980"
+
+    android:background="#8fd2ff"
     tools:context=".MainActivity">
 
     <TextView
@@ -22,13 +22,19 @@
         android:id="@+id/listViewFish"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tvLabel"/>
+        android:layout_below="@+id/tvLabel"/>
+
+
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
+
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="96dp"
 
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_navigation" />
 
