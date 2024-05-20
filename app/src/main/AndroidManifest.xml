@@ -13,6 +13,13 @@
         android:theme="@style/Theme.FISHMANGO"
         tools:targetApi="31">
         <activity
+            android:name=".ButasSettings"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
             android:name=".ButasPlaceOrder"
             android:exported="false" />
         <activity

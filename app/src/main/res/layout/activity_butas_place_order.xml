@@ -55,6 +55,25 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="32dp"/>
+    <Button
+        android:id="@+id/backButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@id/FishStatus"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="35dp"
+        />
+
+    <!-- Purchase Button -->
+    <Button
+        android:id="@+id/purchaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase"
+        android:layout_below="@id/FishStatus"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="225dp"/>
 
 
 
