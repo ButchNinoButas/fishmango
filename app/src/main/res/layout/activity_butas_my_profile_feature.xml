@@ -1,166 +1,305 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
     android:background="#8fd2ff"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ButasMyProfileFeature">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <View
-        android:id="@+id/backgroundView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/rounded_corners"
-        android:layout_marginTop="-10dp"/>
+        <View
+            android:id="@+id/backgroundView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/rounded_corners" />
 
+        <ImageView
+            android:id="@+id/dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profile" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView2"-->
-<!--        android:layout_width="80dp"-->
-<!--        android:layout_height="64dp"-->
+        <TextView
+            android:id="@+id/FullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="140dp"
+            android:text="Butch Sykes"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="160dp"
+            android:text="butchbutas69@gmail.com"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-<!--        android:src="@drawable/profile"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="66dp"-->
-<!--        tools:layout_editor_absoluteY="19dp" />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="20dp">
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Butch :P"-->
-<!--        android:textColor="#ffffff"-->
-<!--        android:textSize="20sp"-->
-<!--        android:textStyle="bold"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="161dp"-->
-<!--        tools:layout_editor_absoluteY="16dp" />-->
+                        <LinearLayout
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Followers 3 | Following 5"-->
-<!--        android:textColor="#ffffff"-->
-<!--        android:textSize="15sp"-->
-<!--        android:textStyle="bold"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="161dp"-->
-<!--        tools:layout_editor_absoluteY="63dp" />-->
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:background="@drawable/round_white"
+                            android:orientation="horizontal"
+                            android:padding="15dp">
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Fisherman"-->
-<!--        android:textColor="#ffffff"-->
-<!--        android:textSize="15sp"-->
-<!--        android:textStyle="bold"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="161dp"-->
-<!--        tools:layout_editor_absoluteY="43dp" />-->
+                            <ImageView
+                                android:id="@+id/wallet1"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_marginEnd="35dp"
+                                android:background="@drawable/round_grey"
+                                android:src="@drawable/wallet" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/Messages"-->
-<!--        android:layout_width="420dp"-->
-<!--        android:layout_height="75dp"-->
+                            <ImageView
+                                android:id="@+id/history1"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/history1"
+                                android:background="@drawable/round_grey"
+                                android:layout_marginEnd="35dp" />
 
-<!--        android:src="@drawable/newmess"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="-6dp"-->
-<!--        tools:layout_editor_absoluteY="109dp" />-->
+                            <ImageView
+                                android:id="@+id/ratings1"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/star"
+                                android:background="@drawable/round_grey" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/Mylikes"-->
-<!--        android:layout_width="415dp"-->
-<!--        android:layout_height="70dp"-->
-
-<!--        android:src="@drawable/newlikes"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="-2dp"-->
-<!--        tools:layout_editor_absoluteY="166dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/Myprod"-->
-<!--        android:layout_width="420dp"-->
-<!--        android:layout_height="69dp"-->
-
-<!--        android:src="@drawable/myprod"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="-4dp"-->
-<!--        tools:layout_editor_absoluteY="216dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/Mycatch"-->
-<!--        android:layout_width="427dp"-->
-<!--        android:layout_height="61dp"-->
-
-<!--        android:src="@drawable/mycatch"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="-13dp"-->
-<!--        tools:layout_editor_absoluteY="273dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/Myearning"-->
-<!--        android:layout_width="416dp"-->
-<!--        android:layout_height="73dp"-->
-
-<!--        android:src="@drawable/newearning"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="-5dp"-->
-<!--        tools:layout_editor_absoluteY="319dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/Mysettings"-->
-<!--        android:layout_width="416dp"-->
-<!--        android:layout_height="73dp"-->
-
-<!--        android:src="@drawable/mysettings"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="0dp"-->
-<!--        tools:layout_editor_absoluteY="377dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/Myhelp"-->
-<!--        android:layout_width="416dp"-->
-<!--        android:layout_height="73dp"-->
-
-<!--        android:src="@drawable/newhelp"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="1dp"-->
-<!--        tools:layout_editor_absoluteY="433dp" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/Myabout"-->
-<!--        android:layout_width="416dp"-->
-<!--        android:layout_height="73dp"-->
-
-<!--        android:src="@drawable/newabout"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="-5dp"-->
-<!--        tools:layout_editor_absoluteY="488dp" />-->
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wallet"
+                            android:layout_marginTop="90dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginStart="25dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="History"
+                            android:layout_marginTop="90dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginStart="128dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ratings"
+                            android:layout_marginTop="90dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginStart="231dp" />
 
 
-<!--    <ImageView-->
-<!--        android:id="@+id/Mylogout"-->
-<!--        android:layout_width="216dp"-->
-<!--        android:layout_height="73dp"-->
+            <!-- User Details Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="120dp"
+                android:padding="16dp"
+                android:background="@drawable/round_white">
 
-<!--        android:src="@drawable/mylogout"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="93dp"-->
-<!--        tools:layout_editor_absoluteY="634dp" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password:"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:paddingEnd="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change"
+                        android:textSize="18sp"
+                        android:textColor="#0000FF"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/views1"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/round_grey"
+                    android:layout_marginVertical="4dp" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/Backna"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile:"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:paddingEnd="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09199720180"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/views2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/round_grey"
+                    android:layout_marginVertical="4dp" />
 
-<!--        android:src="@drawable/backna"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        tools:layout_editor_absoluteX="16dp"-->
-<!--        tools:layout_editor_absoluteY="13dp" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel:"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:paddingEnd="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234-123-9874"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/views3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/round_grey"
+                    android:layout_marginVertical="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address:"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:paddingEnd="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Apas Cebu City"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/views5"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/round_grey"
+                    android:layout_marginVertical="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Landmark:"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:paddingEnd="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brgy. Hall"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/views6"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@drawable/round_grey"
+                    android:layout_marginVertical="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PostalCode:"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:paddingEnd="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6000"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation" />
+
+    </RelativeLayout>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -169,15 +308,4 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.16" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_alignParentBottom="true"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_navigation" />
-
-
-
-</RelativeLayout>
+</LinearLayout>

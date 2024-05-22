@@ -6,6 +6,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.fishmango.databinding.ActivityButasDashboardBinding
@@ -13,6 +14,7 @@ import com.example.fishmango.databinding.ActivityButasInsightFeatureBinding
 
 class ButasInsightFeature : AppCompatActivity() {
     private lateinit var binding: ActivityButasInsightFeatureBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityButasInsightFeatureBinding.inflate(layoutInflater)
@@ -56,5 +58,11 @@ class ButasInsightFeature : AppCompatActivity() {
             }
         }
         binding.bottomNavigation.selectedItemId = R.id.Sites
+
+        val viewDetailsButton: AppCompatButton = findViewById(R.id.viewdetails1)
+        viewDetailsButton.setOnClickListener {
+            val intent = Intent(this@ButasInsightFeature, ButasFishInformation::class.java)
+            startActivity(intent)
+        }
     }
 }

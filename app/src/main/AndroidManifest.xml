@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FISHMANGO"
         tools:targetApi="31">
         <activity
+            android:name=".ButasFishInformation"
+            android:exported="false" />
+        <activity
             android:name=".ButasSettings"
             android:exported="false" />
         <activity

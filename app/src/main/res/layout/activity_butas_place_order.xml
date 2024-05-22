@@ -73,7 +73,7 @@
         android:text="Purchase"
         android:layout_below="@id/FishStatus"
         android:layout_marginTop="5dp"
-        android:layout_marginStart="225dp"/>
+        android:layout_marginStart="215dp"/>
 
 
 
