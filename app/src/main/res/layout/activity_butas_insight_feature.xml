@@ -1,143 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="#8fd2ff"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ButasInsightFeature">
 
-  <ImageView
-      android:id="@+id/imageView1"
-      android:layout_width="68dp"
-      android:layout_height="53dp"
-
-      android:src="@drawable/img_7"
-      tools:ignore="MissingConstraints"
-      tools:layout_editor_absoluteX="3dp"
-      tools:layout_editor_absoluteY="0dp" />
-
-  <TextView
-      android:id="@+id/Welcome"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_toEndOf="@id/imageView1"
-
-      android:textColor="@color/black"
-      android:textSize="20sp"
-      tools:ignore="MissingConstraints,RelativeOverlap"
-      tools:layout_editor_absoluteX="71dp"
-      tools:layout_editor_absoluteY="5dp" />
-
-  <ImageView
-      android:id="@+id/imageView2"
-      android:layout_width="50dp"
-      android:layout_height="40dp"
-
-
-      android:src="@drawable/profile"
-      tools:ignore="MissingConstraints"
-      tools:layout_editor_absoluteX="345dp"
-      tools:layout_editor_absoluteY="5dp" />
-
-  <ImageView
-      android:id="@+id/imageView3"
-      android:layout_width="50dp"
-      android:layout_height="40dp"
-
-      android:src="@drawable/img_21"
-      tools:ignore="MissingConstraints"
-      tools:layout_editor_absoluteX="287dp"
-      tools:layout_editor_absoluteY="5dp" />
-<!--  <ImageButton-->
-<!--      android:id="@+id/Home"-->
-<!--      android:layout_width="40dp"-->
-<!--      android:layout_height="40dp"-->
-<!--      android:background="@drawable/home"-->
-<!--      tools:ignore="MissingConstraints"-->
-<!--      tools:layout_editor_absoluteX="45dp"-->
-<!--      tools:layout_editor_absoluteY="635dp" />-->
-
-<!--  <ImageButton-->
-<!--      android:id="@+id/Shop"-->
-<!--      android:layout_width="40dp"-->
-<!--      android:layout_height="40dp"-->
-
-<!--      android:background="@drawable/fishbutton"-->
-<!--      tools:ignore="MissingConstraints"-->
-<!--      tools:layout_editor_absoluteX="115dp"-->
-<!--      tools:layout_editor_absoluteY="635dp" />-->
-
-<!--  <ImageButton-->
-<!--      android:id="@+id/User"-->
-<!--      android:layout_width="40dp"-->
-<!--      android:layout_height="40dp"-->
-<!--      android:background="@drawable/user"-->
-<!--      tools:ignore="MissingConstraints"-->
-<!--      tools:layout_editor_absoluteX="185dp"-->
-<!--      tools:layout_editor_absoluteY="635dp" />-->
-
-<!--  <ImageButton-->
-<!--      android:id="@+id/Store"-->
-<!--      android:layout_width="40dp"-->
-<!--      android:layout_height="40dp"-->
-
-<!--      android:background="@drawable/cart"-->
-<!--      tools:ignore="MissingConstraints"-->
-<!--      tools:layout_editor_absoluteX="253dp"-->
-<!--      tools:layout_editor_absoluteY="635dp" />-->
-
-<!--  <ImageButton-->
-<!--      android:id="@+id/Settings"-->
-<!--      android:layout_width="40dp"-->
-<!--      android:layout_height="40dp"-->
-
-<!--      android:background="@drawable/settings"-->
-<!--      tools:ignore="MissingConstraints"-->
-<!--      tools:layout_editor_absoluteX="322dp"-->
-<!--      tools:layout_editor_absoluteY="635dp" />-->
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="FISHMAN INSIGHT"
-      android:textColor="#000000"
-      android:textSize="25sp"
-      android:textStyle="bold"
-      tools:layout_editor_absoluteX="16dp"
-      tools:layout_editor_absoluteY="53dp"
-      tools:ignore="MissingConstraints" />
-  <EditText
-      android:id="@+id/searchEditText"
-      android:layout_width="337dp"
-      android:layout_height="45dp"
-
-      android:background="@drawable/rounded_edittext_background"
-      android:hint="Search"
-
-      tools:ignore="MissingConstraints"
-      tools:layout_editor_absoluteX="16dp"
-      tools:layout_editor_absoluteY="87dp" />
-
-  <ImageView
-      android:id="@+id/Cebu"
-      android:layout_width="407dp"
-
-      android:layout_height="486dp"
-      android:src="@drawable/cebu"
-      tools:ignore="MissingConstraints"
-      tools:layout_editor_absoluteX="-1dp"
-      tools:layout_editor_absoluteY="143dp" />
-
-  <com.google.android.material.bottomnavigation.BottomNavigationView
-      android:id="@+id/bottom_navigation"
+  <RelativeLayout
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="wrap_content">
 
-      android:layout_alignParentBottom="true"
-      app:labelVisibilityMode="labeled"
-      app:menu="@menu/bottom_navigation"
-      tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fish Insights"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+  </RelativeLayout>
 
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <ImageView
+          android:layout_width="160dp"
+          android:layout_height="150dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:src="@drawable/tilapias"/>
+      <TextView
+          android:id="@+id/InsightFishName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:text="Tilapia"
+          android:textColor="#FFFFFF"
+          android:textSize="22sp"
+          android:textStyle="bold"/>
+      <TextView
+          android:id="@+id/fishdesc"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Tilapia is a nutritious and delicious freshwater fish"
+          android:textColor="#FFFFFF"
+          android:textSize="20sp"
+          android:textStyle="italic"
+          android:layout_gravity="center"/>
+      <androidx.appcompat.widget.AppCompatButton
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:layout_marginTop="20dp"
+          android:paddingStart="30dp"
+          android:paddingEnd="30dp"
+          android:textColor="@color/primary"
+          android:textAllCaps="false"
+          android:background="@drawable/round_back_secondary_100"
+          android:text="View Details"
+          android:layout_gravity="center"/>
+      <LinearLayout
+          android:background="@drawable/round_back_white10_20"
+          android:layout_width="match_parent"
+          android:layout_height="270dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_marginTop="40dp"
+          android:orientation="vertical"
+          android:padding="15dp">
+
+        <!--Night Mode-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+          <ImageView
+              android:id="@+id/bangusInfo"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/banguss"
+
+
+              android:background="@color/white"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="20dp"
+              android:layout_centerVertical="true"
+              android:text="Bangus"
+              android:textColor="@color/black"
+              android:textStyle="bold"
+              android:layout_toEndOf="@+id/bangusInfo"/>
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:switchMinWidth="50dp"
+              android:backgroundTint="#FF03DAC5"
+              android:text="View Details"
+              />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+          <ImageView
+              android:id="@+id/tamarongInfo"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/tamarong1"
+
+              android:background="@color/white"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="20dp"
+              android:layout_centerVertical="true"
+              android:text="Tamarong"
+              android:textColor="@color/black"
+              android:textStyle="bold"
+              android:layout_toEndOf="@+id/tamarongInfo"/>
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:switchMinWidth="50dp"
+              android:backgroundTint="#FF03DAC5"
+              android:text="View Details"
+              />
+
+        </RelativeLayout>
+        <!--Private Account-->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+          <ImageView
+              android:id="@+id/tuliInfo"
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:background="@color/white"
+
+              android:src="@drawable/tulingannew" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="20dp"
+              android:layout_centerVertical="true"
+              android:text="Tulingan"
+              android:textColor="@color/black"
+              android:textStyle="bold"
+              android:layout_toEndOf="@+id/tuliInfo"/>
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:switchMinWidth="50dp"
+              android:backgroundTint="#FF03DAC5"
+              android:text="View Details"
+              />
+
+        </RelativeLayout>
+
+
+      </LinearLayout>
+
+
+
+
+    </LinearLayout>
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation" />
+  </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

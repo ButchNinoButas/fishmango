@@ -12,8 +12,10 @@
         android:id="@+id/tvLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buy Now"
-        android:textSize="24sp"
+        android:text="Take Your Picks"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:paddingBottom="16dp"/>
@@ -31,7 +33,7 @@
 
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="wrap_content"
 
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
