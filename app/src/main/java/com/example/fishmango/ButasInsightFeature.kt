@@ -2,6 +2,7 @@ package com.example.fishmango
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -64,5 +65,22 @@ class ButasInsightFeature : AppCompatActivity() {
             val intent = Intent(this@ButasInsightFeature, ButasFishInformation::class.java)
             startActivity(intent)
         }
+        val bangusbtn1Button = findViewById<Button>(R.id.bangusbtn1)
+        bangusbtn1Button.setOnClickListener {
+            val intent = Intent(this@ButasInsightFeature, ButasFishInformation1::class.java)
+            startActivity(intent)
+        }
+        val tamarongbtnButton = findViewById<Button>(R.id.tamarongbtn)
+        tamarongbtnButton.setOnClickListener {
+            val intent = Intent(this@ButasInsightFeature, ButasFishInformation2::class.java)
+            startActivity(intent)
+        }
+        val tulibtnButton = findViewById<Button>(R.id.tulibtn)
+        tulibtnButton.setOnClickListener {
+            val intent = Intent(this@ButasInsightFeature, ButasFishInformation3::class.java)
+            startActivity(intent)
+        }
+
     }
+
 }

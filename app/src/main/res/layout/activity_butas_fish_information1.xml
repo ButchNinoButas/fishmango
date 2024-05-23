@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8fd2ff"
+    tools:context=".ButasFishInformation1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/balik2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:src="@drawable/back_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish Information"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/banguss"/>
+        <TextView
+            android:id="@+id/InsightFishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Bangus"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/fishdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangus is the national fish of Philippines, called milkfish in English. It is an adaptable, tough, and sturdy fish that can survive in confined spaces, so it is regularly bred on fish farms, which is the reason why it is widely available all over the Philippines."
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dish List"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daing na Bangus"
+            android:textSize="18sp"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangus Sisig"
+            android:textSize="18sp"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sinigang na Bangus"
+            android:textSize="18sp"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangus Belly Sinigang sa Miso"
+            android:textSize="18sp"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sinigang na Bangus"
+            android:textSize="18sp"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inihaw na Bangus"
+            android:textSize="18sp"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bangus Salpicao"
+            android:textSize="18sp"
+            android:paddingVertical="8dp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

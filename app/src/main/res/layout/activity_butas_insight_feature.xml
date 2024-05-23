@@ -99,6 +99,7 @@
               android:textStyle="bold"
               android:layout_toEndOf="@+id/bangusInfo"/>
           <Button
+              android:id="@+id/bangusbtn1"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_alignParentEnd="true"
@@ -132,6 +133,7 @@
               android:textStyle="bold"
               android:layout_toEndOf="@+id/tamarongInfo"/>
           <Button
+              android:id="@+id/tamarongbtn"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_alignParentEnd="true"
@@ -165,6 +167,7 @@
               android:textStyle="bold"
               android:layout_toEndOf="@+id/tuliInfo"/>
           <Button
+              android:id="@+id/tulibtn"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_alignParentEnd="true"
