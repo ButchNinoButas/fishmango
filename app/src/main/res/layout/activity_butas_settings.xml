@@ -55,7 +55,7 @@
                 android:id="@+id/FullNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+63 9199 720 180"
+                android:text="butchbutas69@gmail.com"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -103,6 +103,7 @@
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/nightmode"/>
                     <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchNightMode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -387,10 +388,13 @@
 
 
 
+
         </LinearLayout>
 
 
+
         </LinearLayout>
+
 
     </ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -401,6 +405,7 @@
         android:layout_alignParentBottom="true"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_navigation" />
+
 
 
 
