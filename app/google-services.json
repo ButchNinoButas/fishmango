@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "718753227967",
-    "project_id": "fishmango-3b762",
-    "storage_bucket": "fishmango-3b762.appspot.com"
+    "project_number": "741637602989",
+    "project_id": "fishmango-48fcd",
+    "storage_bucket": "fishmango-48fcd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:718753227967:android:07b918dc3aa7f64855120a",
+        "mobilesdk_app_id": "1:741637602989:android:393f75b77e815f146f5024",
         "android_client_info": {
           "package_name": "com.example.fishmango"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCnhKuoLtuY5yINO_ebDXMpmlHDswEciuA"
+          "current_key": "AIzaSyCjo3j45NM0aY5os4ODn5TCG0oswMjbjUI"
         }
       ],
       "services": {
