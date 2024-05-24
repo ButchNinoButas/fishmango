@@ -2,7 +2,9 @@ package com.example.fishmango
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*
@@ -73,5 +75,14 @@ class ButasMyProfileFeature : AppCompatActivity() {
             }
         }
         binding.bottomNavigation.selectedItemId = R.id.User
+
+
+
+
+
+        val historyButton = findViewById<ImageButton>(R.id.history1)
+        historyButton.setOnClickListener {
+            startActivity(Intent(this, PurchaseHistory::class.java))
+        }
     }
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewFishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fish Name: "
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewFishPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fish Price: " />
+
+    <TextView
+        android:id="@+id/textViewKilosBought"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kilos Bought: " />
+
+    <TextView
+        android:id="@+id/textViewTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: " />
+
+</LinearLayout>

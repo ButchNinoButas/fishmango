@@ -65,7 +65,7 @@
                             android:orientation="horizontal"
                             android:padding="15dp">
 
-                            <ImageView
+                            <ImageButton
                                 android:id="@+id/wallet1"
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
@@ -73,7 +73,7 @@
                                 android:background="@drawable/round_grey"
                                 android:src="@drawable/wallet" />
 
-                            <ImageView
+                            <ImageButton
                                 android:id="@+id/history1"
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
@@ -81,13 +81,12 @@
                                 android:background="@drawable/round_grey"
                                 android:layout_marginEnd="35dp" />
 
-                            <ImageView
+                            <ImageButton
                                 android:id="@+id/ratings1"
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:src="@drawable/star"
                                 android:background="@drawable/round_grey" />
-
                         </LinearLayout>
                         <TextView
                             android:layout_width="wrap_content"

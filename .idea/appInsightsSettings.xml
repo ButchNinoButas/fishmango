@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.fishmango" />
+                  <option name="mobileSdkAppId" value="1:741637602989:android:393f75b77e815f146f5024" />
+                  <option name="projectId" value="fishmango-48fcd" />
+                  <option name="projectNumber" value="741637602989" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
