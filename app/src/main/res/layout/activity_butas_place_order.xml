@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="#ede980"
+    android:background="#8fd2ff"
     tools:context=".ButasPlaceOrder">
 
     <TextView
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Place Order"
         android:textSize="24sp"
+        android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:paddingBottom="16dp"/>
@@ -59,10 +60,11 @@
         android:id="@+id/backButtons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cancel"
+        android:text="Back"
         android:layout_below="@id/FishStatus"
         android:layout_marginTop="5dp"
         android:layout_marginStart="35dp"
+        android:backgroundTint="#FF03DAC5"
         />
 
     <!-- Purchase Button -->
@@ -73,7 +75,8 @@
         android:text="Purchase"
         android:layout_below="@id/FishStatus"
         android:layout_marginTop="5dp"
-        android:layout_marginStart="215dp"/>
+        android:layout_marginStart="215dp"
+        android:backgroundTint="#FF03DAC5"/>
 
 
 

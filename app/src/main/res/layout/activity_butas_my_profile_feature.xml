@@ -22,11 +22,12 @@
 
         <ImageView
             android:id="@+id/dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
             android:layout_marginStart="120dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/profile" />
+            android:src="@drawable/round_person"
+            android:background="@drawable/round_grey"/>
 
         <TextView
             android:id="@+id/FullName"

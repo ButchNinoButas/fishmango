@@ -63,7 +63,18 @@ class ButasSettings : AppCompatActivity() {
             // Create an Intent to start the LoginActivity
             val intent = Intent(this@ButasSettings, ButasDashboard::class.java)
             startActivity(intent)
+
         }
+        val AppCompatButton = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.logoutButton)
+
+        // Set OnClickListener to the HvAcct TextView
+        AppCompatButton.setOnClickListener {
+
+            val intent = Intent(this@ButasSettings, MainActivity::class.java)
+            startActivity(intent)
+
+        }
+
     }
 
 

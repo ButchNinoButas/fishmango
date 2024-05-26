@@ -40,27 +40,29 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/profile"/>
+                android:src="@drawable/round_person"
+                android:background="@drawable/round_grey"/>
             <TextView
                 android:id="@+id/FullName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="Butch Sykes"
+                android:text="Customer"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <TextView
-                android:id="@+id/FullNumber"
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="butchbutas69@gmail.com"
+                android:text="Classic Member"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logoutButton"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
@@ -69,7 +71,7 @@
                 android:textColor="@color/primary"
                 android:textAllCaps="false"
                 android:background="@drawable/round_back_secondary_100"
-                android:text="Edit Profile"
+                android:text="Logout"
                 android:layout_gravity="center"/>
             <LinearLayout
                 android:background="@drawable/round_back_white10_20"

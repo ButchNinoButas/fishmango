@@ -14,6 +14,7 @@ preference = "1.2.0"
 googleGmsGoogleServices = "4.4.1"
 firebaseAuth = "23.0.0"
 firebaseDatabase = "21.0.0"
+firebaseAuthKtx = "23.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,6 +29,7 @@ androidx-core = { group = "androidx.core", name = "core", version.ref = "core" }
 androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
