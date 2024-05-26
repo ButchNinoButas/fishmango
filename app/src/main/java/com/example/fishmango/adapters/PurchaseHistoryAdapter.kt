@@ -32,8 +32,8 @@ class PurchaseHistoryAdapter(private val purchaseList: List<Purchase>) : Recycle
         holder.kilosBought.text = "Kilos Bought: ${currentItem.kilosBought}"
         holder.totalAmount.text = "Total Amount: ${currentItem.totalAmount}"
         holder.location.text = "Location: ${currentItem.location}"
-        holder.landmark.text = "Kilos Bought: ${currentItem.landmark}"
-        holder.phoneNumber.text = "Total Amount: ${currentItem.phoneNumber}"
+        holder.landmark.text = "Landmark: ${currentItem.landmark}"
+        holder.phoneNumber.text = "Phone Number: ${currentItem.phoneNumber}"
     }
 
     override fun getItemCount(): Int {

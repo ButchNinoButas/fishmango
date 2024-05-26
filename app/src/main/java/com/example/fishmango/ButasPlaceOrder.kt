@@ -66,12 +66,34 @@ class ButasPlaceOrder : AppCompatActivity() {
     private fun showPurchaseDialog(fishName: String, fishPrice: String) {
         val dialogView = layoutInflater.inflate(R.layout.dialog_place_order, null)
         val etKilos = dialogView.findViewById<EditText>(R.id.etKilos)
+        val etLocation = dialogView.findViewById<EditText>(R.id.location)
+        val etLandmark = dialogView.findViewById<EditText>(R.id.landmark)
+        val etPhoneNumber = dialogView.findViewById<EditText>(R.id.phonenumber)
 
         AlertDialog.Builder(this)
             .setTitle("Purchase $fishName")
             .setView(dialogView)
-            .setPositiveButton("Purchase") { _: DialogInterface, i: Int ->
+            .setPositiveButton("Purchase") { _: DialogInterface, _: Int ->
                 val kilos = etKilos.text.toString().toDoubleOrNull()
+                val location = etLocation.text.toString()
+                val landmark = etLandmark.text.toString()
+                val phoneNumber = etPhoneNumber.text.toString()
+
+                if (landmark.isEmpty()) {
+                    Toast.makeText(this, "Enter the landmark", Toast.LENGTH_SHORT).show()
+                    return@setPositiveButton
+                }
+
+                if (location.isEmpty()) {
+                    Toast.makeText(this, "Enter the location", Toast.LENGTH_SHORT).show()
+                    return@setPositiveButton
+                }
+
+                if (phoneNumber.isEmpty()) {
+                    Toast.makeText(this, "Enter the phone number", Toast.LENGTH_SHORT).show()
+                    return@setPositiveButton
+                }
+
                 if (kilos != null && kilos > 0) {
                     // Extract the numeric part of the fish price
                     val numericFishPrice = fishPrice.replace(Regex("[^\\d.]"), "")
@@ -95,6 +117,9 @@ class ButasPlaceOrder : AppCompatActivity() {
                                         purchase["fishPrice"] = fishPrice
                                         purchase["kilosBought"] = kilos
                                         purchase["totalAmount"] = totalAmount
+                                        purchase["location"] = location
+                                        purchase["landmark"] = landmark
+                                        purchase["phoneNumber"] = phoneNumber
 
                                         // Save the purchase to the database
                                         purchasesRef.setValue(purchase)
