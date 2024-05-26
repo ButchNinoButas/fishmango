@@ -15,6 +15,9 @@ class PurchaseHistoryAdapter(private val purchaseList: List<Purchase>) : Recycle
         val fishPrice: TextView = itemView.findViewById(R.id.textViewFishPrice)
         val kilosBought: TextView = itemView.findViewById(R.id.textViewKilosBought)
         val totalAmount: TextView = itemView.findViewById(R.id.textViewTotalAmount)
+        val location: TextView = itemView.findViewById(R.id.locationsText)
+        val landmark: TextView = itemView.findViewById(R.id.landmarkText)
+        val phoneNumber: TextView = itemView.findViewById(R.id.phoneNumberText)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -28,6 +31,9 @@ class PurchaseHistoryAdapter(private val purchaseList: List<Purchase>) : Recycle
         holder.fishPrice.text = "Fish Price: ${currentItem.fishPrice}"
         holder.kilosBought.text = "Kilos Bought: ${currentItem.kilosBought}"
         holder.totalAmount.text = "Total Amount: ${currentItem.totalAmount}"
+        holder.location.text = "Location: ${currentItem.location}"
+        holder.landmark.text = "Kilos Bought: ${currentItem.landmark}"
+        holder.phoneNumber.text = "Total Amount: ${currentItem.phoneNumber}"
     }
 
     override fun getItemCount(): Int {

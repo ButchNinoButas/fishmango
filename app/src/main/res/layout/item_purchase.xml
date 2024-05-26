@@ -31,5 +31,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total Amount: " />
+    <TextView
+        android:id="@+id/locationsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: " />
+    <TextView
+        android:id="@+id/landmarkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Landmark: " />
+    <TextView
+        android:id="@+id/phoneNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: " />
 
 </LinearLayout>
